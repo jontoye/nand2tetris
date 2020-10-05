@@ -11,25 +11,6 @@
 // "white" in every pixel;
 // the screen should remain fully clear as long as no key is pressed.
 
-// LOOP:
-// 	addr = SCREEN
-// 	count = 8192
-// 	if KBD = 0 goto WHITE
-// 	else goto BLACK
-
-// BLACK:
-// 	if count = 0 goto LOOP
-// 	RAM[addr] = -1
-// 	addr=addr + 1
-// 	count = count - 1
-// 	goto BLACK
-
-// WHITE:
-// 	if count = 0 goto LOOP
-// 	RAM[addr] = 0
-// 	addr=addr + 1
-// 	count = count - 1
-// 	goto WHITE
 
 (LOOP) 
 	@SCREEN
